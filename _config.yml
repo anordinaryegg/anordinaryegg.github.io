@@ -30,7 +30,6 @@ exclude:
   - README.md
   - LICENSE.txt
   - ordinaryegg.gemspec
-  - assets/src
   - package.json
   - package-lock.json
   - webpack.config.js
