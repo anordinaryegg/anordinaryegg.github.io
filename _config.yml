@@ -21,12 +21,10 @@ pagination:
 sass:
   style: compressed
 
-
 plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap
-
 
 exclude:
   - README.md
