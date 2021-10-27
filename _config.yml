@@ -1,0 +1,38 @@
+title: ordinary egg
+description: Tales of a person just trying to figure things out. Gender, sexuality, social stererotypes, and the like.
+lang: en_US
+logo: /assets/images/logo-1024.png
+url: https://ordinaryegg.com
+
+autopages:
+  enabled: true
+  tags:
+    layouts:
+      - "tag.html"
+    title: ":tag"
+    permalink: "/commentary/:tag"
+
+pagination:
+  enabled: true
+  per_page: 20
+  permalink: "/page/:num/"
+  sort_reverse: true
+
+sass:
+  style: compressed
+
+
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+
+exclude:
+  - README.md
+  - LICENSE.txt
+  - ordinaryegg.gemspec
+  - assets/src
+  - package.json
+  - package-lock.json
+  - webpack.config.js

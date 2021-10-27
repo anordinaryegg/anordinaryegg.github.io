@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div
+      class="container"
+      data-controller="page"
+      data-page-hidden-class="is-hidden"
+      data-page-story-content-class="story-content"
+    >
+      {% include nameplate.html %}
+
+      <div class="row">
+        <div class="col-2-md"></div>
+        <div class="col-12 col-8-md">
+
+          {% if page.autopages %}
+          <div class="text-center">
+            <h2
+              class="is-marginless"
+            >{{ page.autopages.display_name }} commentary</h2>
+          </div>
+          {% endif %}
+
+          {{ content }}
+
+          <div class="m-b-xl"></div>
+          {% include picker.html %}
+
+        </div>
+      </div>
+      <div
+        class="overlay is-hidden"
+        data-page-target="overlay"
+        data-action="click->page#hideOverlay"
+      ></div>
+
+    </div>
+
+  </body>
+
+</html>

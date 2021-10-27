@@ -1,0 +1,36 @@
+// Colors -- Start
+$black: rgb(75, 75, 75);
+$gray-lightest: rgb(250, 250, 250);
+$gray: rgb(224, 224, 224);
+$pink-lightest: rgb(255, 247, 252);
+$pink-light: rgb(255, 240, 250);
+$pink: rgb(255, 210, 241);
+$pink-dark: rgb(255, 149, 222);
+$pink-darkest: rgb(255, 0, 176);
+$white: rgb(255, 255, 255);
+// Colors -- End
+
+
+// Font -- Start
+$base-font-size: 16px !default;
+$serif-font: 'Kurale', serif;;
+$san-serif-font: 'Fira Sans', sans-serif;
+$mono-font: 'Fira Code', monospace;
+// Font -- End
+
+
+// Misc -- Start
+$header-height: 100px;
+$deg: 315deg;
+// Misc -- End
+
+
+// Spacing -- Start
+$spacing: 15px;
+// Spacing -- End
+
+
+// Chota -- Start
+// Variables derived from Chota CSS framework
+$width-md-min: 900px;
+// Chota -- End

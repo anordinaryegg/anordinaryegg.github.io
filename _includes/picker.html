@@ -1,0 +1,30 @@
+
+<div
+  class="picker"
+  data-controller="picker"
+  data-picker-target="picker"
+  data-picker-is-open-value="false"
+  data-picker-hidden-class="is-hidden"
+  data-action="click@window->picker#closeIfNeeded"
+>
+  <div class="picker-items">
+    <div
+      data-picker-target="options"
+      class="is-hidden"
+    >
+      <a href="/">
+        <div class="picker--item"><span class="link">feed</span></div>
+      </a>
+      <a href="/about">
+        <div class="picker--item"><span class="link">about</span></div>
+      </a>
+    </div>
+    <div
+      data-action="click->picker#toggleMenu"
+      class="picker--item"
+      data-picker-target="button"
+    >menu
+    </div>
+  </div>
+</div>
+

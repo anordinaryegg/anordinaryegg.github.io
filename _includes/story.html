@@ -1,0 +1,23 @@
+{% capture rotate %}{% cycle "clock", "counter" %}{% endcapture %}
+<div class="story-container rotate-{{rotate}}">
+  <div class="story">
+    <h1 class="story-title is-marginless">
+      <a href="{{ include.url }}" title="{{ include.title }}">{{ include.title }}</a>
+    </h1>
+    {% if include.layout == "post" %}
+      <p class="is-marginless">
+        <span class="date">{{ include.date | date: "%B %-d, %Y" }}</span>
+        {% if include.tags %}
+        <span class="divider">&#129370;</span>
+        {% for tag in include.tags %}
+        {% assign tag_slug = tag | slugify %}
+        <a href="{{ '/commentary/' | append: tag_slug }}">{{ tag }}</a>
+        {% endfor %}
+        {% endif %}
+      </p>
+    {% endif %}
+    <div class="story-content">
+      {{ include.content }}
+    </div>
+  </div>
+</div>

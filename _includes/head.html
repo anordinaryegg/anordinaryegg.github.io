@@ -1,0 +1,17 @@
+{% seo title=false %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="{{ "/assets/static/main-bundle.js" | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ "/assets/static/main.css" | relative_url }}">
+
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kurale&family=Fira+Code&display=swap" rel="stylesheet">
+
+  <title>{{ site.title }}{% if page.title != "" %}: {{ page.title }}{% endif %}</title>
+</head>

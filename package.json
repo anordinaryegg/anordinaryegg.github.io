@@ -1,0 +1,39 @@
+{
+  "name": "anordinaryegg.github.io",
+  "version": "1.0.0",
+  "description": "Front end tooling for Ordinary Egg.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/webpack --watch | jekyll serve --livereload --incremental",
+    "build": "./node_modules/.bin/webpack | jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anordinaryegg/anordinaryegg.github.io.git"
+  },
+  "author": "Ordinary Egg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anordinaryegg/anordinaryegg.github.io/issues"
+  },
+  "homepage": "https://github.com/anordinaryegg/anordinaryegg.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "@stimulus/polyfills": "^2.0.0",
+    "chota": "^0.8.0",
+    "stimulus": "^3.0.1"
+  }
+}
