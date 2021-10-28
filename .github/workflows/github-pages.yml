@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - run: npm i -D && ./node_modules/.bin/webpack
-      - uses: helaili/jekyll-action@v2
+      - uses: helaili/jekyll-action@2.2.0
         with:
           token: ${{ secrets.JEKYLL_PAT }}
           target_branch: 'gh-pages'
