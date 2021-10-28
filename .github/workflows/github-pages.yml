@@ -12,6 +12,10 @@ jobs:
       - name: 📂 setup
         uses: actions/checkout@v2
 
+      - name: ⬢ setup node
+        uses: actions/setup-node@v2
+        run: npm i -D && ./node_modules/.bin/webpack
+
       - name: 💎 setup ruby
         uses: ruby/setup-ruby@v1
         with:
