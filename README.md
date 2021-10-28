@@ -1,12 +1,11 @@
 # Ordinary Egg
 
-## Dev
-
 > Ruby 2.7
 
-```bash
+```sh
 bundle install  # Install ruby deps
+npm i  # Install js deps
 
-jekyll server  # Dev server
-jekyll build  # Build
+npm run start  # development
+npm run build  # build distributable
 ```
